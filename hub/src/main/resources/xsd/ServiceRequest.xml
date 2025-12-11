@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://campus.hub.com/soap"
+           xmlns:tns="http://campus.hub.com/soap"
+           elementFormDefault="qualified">
+
+    <xs:element name="ServiceRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentId" type="xs:string"/>
+                <xs:element name="studentName" type="xs:string" minOccurs="0"/>
+                <xs:element name="email" type="xs:string" minOccurs="0"/>
+                <xs:element name="serviceType" type="xs:string"/>
+                <xs:element name="details" type="xs:string" minOccurs="0"/>
+                <xs:element name="priority" type="xs:integer" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ServiceResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="status" type="xs:string"/>
+                <xs:element name="message" type="xs:string"/>
+                <xs:element name="requestId" type="xs:string" minOccurs="0"/>
+                <xs:element name="trackingNumber" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="responseDate" type="xs:string"/>
+            <xs:attribute name="responseId" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

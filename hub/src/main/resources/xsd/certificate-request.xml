@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest xmlns="http://campus.hub.com/soap"
+                requestId="REQ-2025-001"
+                submissionDate="2025-01-15T10:30:00"
+                version="1.0">
+    <studentInfo>
+        <studentId>STU2025001</studentId>
+        <fullName>John Doe</fullName>
+        <email>john.doe@student.campus.edu</email>
+        <department>Computer Science</department>
+    </studentInfo>
+
+    <serviceDetails>
+        <serviceType>CERTIFICATE</serviceType>
+        <title>Enrollment Certificate Request</title>
+        <description>
+            Requesting an official enrollment certificate for visa application purposes.
+            Need the certificate to be stamped and signed by the registrar.
+        </description>
+        <priority>2</priority>
+        <urgency>HIGH</urgency>
+    </serviceDetails>
+
+    <additionalInfo>
+        <attachmentRequired>true</attachmentRequired>
+        <comments>Need two copies, one in English and one in French</comments>
+        <preferredCompletionDate>2025-01-25</preferredCompletionDate>
+    </additionalInfo>
+</ServiceRequest>
