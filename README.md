@@ -39,7 +39,6 @@ text
 - **Backend**: Spring Boot 3.5.8, Java 17
 - **Database**: H2 (development), MySQL (production)
 - **Web Services**: Spring WS, JAXB, SOAP, REST
-- **Frontend**: Thymeleaf, Bootstrap 5
 - **Build Tool**: Maven
 - **Validation**: Jakarta Validation, XSD Schema
 
